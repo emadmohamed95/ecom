@@ -1,0 +1,31 @@
+.Breadcrumbs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-around;
+    justify-content: center;
+    height: 68px;
+    // width: '100%';
+    border-bottom: #00000080 1px solid;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.text{
+    color: #1D1D1B;
+   font-size: 16px;
+   font-family: "Montserrat-Medium";
+
+}
+
+
+
+

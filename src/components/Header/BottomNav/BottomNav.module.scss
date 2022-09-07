@@ -1,0 +1,38 @@
+.BottomNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // justify-content: space-around;
+    justify-content: center;
+    height: 48px;
+    background-color: black;
+    // width: '100%';
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.text{
+   color: white;
+   margin-right: 115.28px;
+   font-size: 17px;
+   font-family: "Montserrat-SemiBold";
+
+}
+
+.textSpecial{
+    color: #F11133;
+    font-size: 17px;
+    font-family: "Montserrat-SemiBold";
+
+ }
+
+
+
