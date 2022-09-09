@@ -1,0 +1,43 @@
+@import '../../../variables.scss';
+
+.SimilarProducts{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // height: 84px;
+    width: 1200px;
+    // background-color: blue;
+}
+
+
+
+
+
+
+.title{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 28px;
+    color: $secondary-color;
+    margin-bottom: 20px;
+
+}
+
+
+
+.subtitle{
+    color: $secondary-color;
+    font-family: 'Montserrat-Light';
+    font-size: 22px;
+    margin-bottom: 30px;
+
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 31.58px;
+    overflow-x: scroll;
+    
+    
+}

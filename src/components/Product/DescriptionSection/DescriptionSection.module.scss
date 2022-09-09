@@ -1,0 +1,275 @@
+@import '../../../variables.scss';
+
+.DescriptionSection{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    // height: 84px;
+    width: 568px;
+    // background-color: blue;
+}
+
+.container{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: red;
+}
+
+.logo{
+    margin-bottom: 14.89px;
+    width: 60px;
+    height: 40px;
+}
+
+.title{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 18px;
+    color: #1D1D1B;
+    margin-bottom: 12.13px;
+
+
+}
+
+.category{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    color: #A7A9AC;
+    cursor: pointer;
+    margin-bottom: 12.13px;
+
+}
+
+.ratings{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 19.24px;
+}
+
+.stars{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.star{
+    margin-right: 5.54px;
+}
+
+.rating{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 17px;
+    color: #000000;
+    margin-right: 16px;
+}
+
+
+.numberOfRatings{
+    font-family: 'Montserrat-Medium';
+    font-size: 15px;
+    color: #575756;
+}
+
+
+.pricing{
+    display: flex;
+    flex-direction: row;
+}
+
+.discountedPrice{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 30px;
+    color: $secondary-color;
+    margin-right: 19.29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.discountedPriceCurrency{
+    font-family: 'Montserrat-Regular';
+    font-size: 20px;
+}
+
+.price{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    color: #A7A9AC;
+    margin-right: 19.29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+.priceCurrency{
+    font-family: 'Montserrat-SemiBold';
+
+}
+
+.discountPercentage{
+    background: $primary-color 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    width: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+    color: #000000;
+}
+
+
+
+.hr{
+    border: 0.5px solid #D9D9D9;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 20.36px;
+}
+
+
+.sizes{
+    display: flex;
+    flex-direction: row;
+}
+
+.sizeDiv{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 0.5px solid #D9D9D9;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: $secondary-color;
+    font-family: 'Montserrat-Medium';
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.sizeDivDisabled{
+    background: #ECECEC 0% 0% no-repeat padding-box;
+    color: #1D1D1B;
+}
+
+
+.sizeDiv:hover{
+    
+    border: 1px solid $secondary-color;
+   
+}
+
+.subtitle{
+    color: #1D1D1B;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+
+.colors{
+    display: flex;
+    flex-direction: row;
+}
+
+.color{
+    margin-right: 16px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+
+}
+
+.color:hover{
+    
+    border: 1px solid $secondary-color;
+   
+}
+
+
+
+
+.quantity{
+    width: 252px;
+    height: 48px;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border: 0.5px solid #D9D9D9;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+
+.circle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background: $primary-color 0% 0% no-repeat padding-box;
+    margin-left: 5.33px;
+    margin-right: 5.33px;
+    cursor: pointer;
+}
+
+.quantityText{
+    color: $secondary-color;
+    font-family: 'Montserrat-Bold';
+    font-size: 16px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.addToCart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 54px;
+    background: $secondary-color 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+}
+
+
+.pickup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 252px;
+    height: 54px;
+    background: $primary-color 0% 0% no-repeat padding-box;
+    border-radius: 27px;
+    cursor: pointer;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+}
