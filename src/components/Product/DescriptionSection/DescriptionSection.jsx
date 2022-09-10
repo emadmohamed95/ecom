@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './DescriptionSection.module.scss';
-
-
-// import adidasSmall from '../../../images/adidasSmall.svg';
 import starFull from '../../../images/starFull.svg';
 import starEmpty from '../../../images/starEmpty.svg';
 
@@ -16,47 +13,6 @@ import plus from '../../../images/plus.svg';
 
 
 export const DescriptionSection = ({ product, quantity,incrementQuantity,decrementQuantity, addProductToCart}) => {
-
-    // let product = {
-    //     logo: 'adidasSmall.svg',
-    //     title: 'Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    //     category: 'Men',
-    //     rating: 4.9,
-    //     numberOfRatings: '22',
-    //     price: '12,999',
-    //     discountedPrice: '9,999',
-    //     discountPercentage: '30%',
-    //     sizes: [{ type: 'Small', available: true },
-    //     { type: 'Medium', available: true },
-    //     { type: 'Large', available: false },
-    //     { type: 'X Large', available: true },
-    //     { type: 'XX Large', available: true }],
-    //     colors: ['black.png', 'red.png'],
-
-    // }
-
-
-    // let [quantity, setQuantity] = useState(1)
-
-    // // let [mainImgIndex, setMainImgIndex] = useState(0)
-
-    // // const changeMainImg = (index) => {
-
-    // //     setMainImg("2x" + images[index])
-
-    // // }
-
-    // const incrementQuantity = ()=>{
-    //     setQuantity(quantity+1)
-    // }
-
-    // const decrementQuantity = ()=>{
-    //     if(quantity!=1){
-    //         setQuantity(quantity-1)
-    //     }
-        
-    // }
-
 
 
 

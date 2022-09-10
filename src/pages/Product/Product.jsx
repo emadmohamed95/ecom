@@ -27,7 +27,7 @@ export const Product = ({ addToCart }) => {
   }
 
   const decrementQuantity = () => {
-    if (quantity != 1) {
+    if (quantity !== 1) {
       setQuantity(quantity - 1)
     }
 
@@ -63,7 +63,7 @@ export const Product = ({ addToCart }) => {
           <DescriptionSection product={product} quantity={quantity} incrementQuantity={incrementQuantity} decrementQuantity={decrementQuantity} addProductToCart={addProductToCart} />
         </div>
 
-        <SimilarProducts SimilarProducts={product?.SimilarProducts ? product?.SimilarProducts : []} />
+        <SimilarProducts similarProducts={product?.similarProducts ? product.similarProducts : []} />
 
       </div>
 

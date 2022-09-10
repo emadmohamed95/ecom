@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0.73px 2px #00000080;
-    // width: '100%';
 }
 .container{
     width: 1200px;
@@ -14,15 +13,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // background-color: red;
 }
 
 .burgermenu{
-    
-    // margin-right: 32px;
+    cursor: pointer;
 }
 .logo{
-    // margin-right: 105.93px;
     width: 116px;
 height: 30px;
 }
@@ -64,6 +60,7 @@ height: 30px;
     flex-direction: row;
     align-items: center;
     // margin-right: 32px;
+    cursor: pointer;
 
 }
 

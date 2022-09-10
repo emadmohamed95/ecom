@@ -1,11 +1,7 @@
 import React from 'react'
 import styles from './DrawerCard.module.scss';
 
-import tagLogo from '../../../images/360.svg';
 
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import starFull from '../../../images/starFull.svg';
-import starEmpty from '../../../images/starEmpty.svg';
 
 
 

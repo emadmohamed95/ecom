@@ -9,8 +9,6 @@ import { Product } from './pages/Product/Product';
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { useState } from 'react';
-
-import Drawer from 'react-modern-drawer'
 import { AppDrawer } from './components/Drawer/Drawer';
 
 
@@ -20,14 +18,15 @@ function App() {
 
   const [isOpen, setIsOpen] = useState(false)
 
-  const addToCart = (product)=>{
+  const addToCart = (product) => {
 
-    setCart(prevState=>([...prevState,product]))
+    setCart(prevState => ([...prevState, product]))
+    toggleDrawer()
 
   }
 
 
-  const removeFromCart = (index)=>{
+  const removeFromCart = (index) => {
     setCart([
       ...cart.slice(0, index),
       ...cart.slice(index + 1)
@@ -37,15 +36,15 @@ function App() {
 
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState)
-}
+  }
 
 
   return (
     <div className="App">
-            <AppDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} cart={cart} removeFromCart={removeFromCart}/>
-      <Header cart={cart} toggleDrawer={toggleDrawer}/>
-      <Product addToCart={addToCart}/>
-      <Footer/>
+      <AppDrawer isOpen={isOpen} toggleDrawer={toggleDrawer} cart={cart} removeFromCart={removeFromCart} />
+      <Header cart={cart} toggleDrawer={toggleDrawer} />
+      <Product addToCart={addToCart} />
+      <Footer />
     </div>
   );
 }
