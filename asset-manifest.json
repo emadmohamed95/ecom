@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ecom/static/css/main.b6d23a4a.css",
-    "main.js": "/ecom/static/js/main.33d9ca3c.js",
+    "main.css": "/ecom/static/css/main.b5d49e78.css",
+    "main.js": "/ecom/static/js/main.5440878d.js",
     "static/js/787.34115356.chunk.js": "/ecom/static/js/787.34115356.chunk.js",
     "static/media/Montserrat-SemiBold.ttf": "/ecom/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
     "static/media/Montserrat-Medium.ttf": "/ecom/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
@@ -51,12 +51,12 @@
     "static/media/nextsmall.svg": "/ecom/static/media/nextsmall.a0cd1606431b1c69710b4e6f4985fad2.svg",
     "static/media/plus.svg": "/ecom/static/media/plus.88401e0747c0d422b487442cb686ef05.svg",
     "static/media/minus.svg": "/ecom/static/media/minus.a80d09d94ecbf89840360848e8f52734.svg",
-    "main.b6d23a4a.css.map": "/ecom/static/css/main.b6d23a4a.css.map",
-    "main.33d9ca3c.js.map": "/ecom/static/js/main.33d9ca3c.js.map",
+    "main.b5d49e78.css.map": "/ecom/static/css/main.b5d49e78.css.map",
+    "main.5440878d.js.map": "/ecom/static/js/main.5440878d.js.map",
     "787.34115356.chunk.js.map": "/ecom/static/js/787.34115356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6d23a4a.css",
-    "static/js/main.33d9ca3c.js"
+    "static/css/main.b5d49e78.css",
+    "static/js/main.5440878d.js"
   ]
 }
