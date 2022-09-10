@@ -6,11 +6,11 @@ import { BottomNav } from './BottomNav/BottomNav';
 import { Breadcrumbs } from './Breadcrumbs/Breadcrumbs';
 
 
-export const Header = () => {
+export const Header = ({cart, toggleDrawer}) => {
   return (
     <div className={styles.header}>
       <TopNav/>
-      <MiddleNav/>
+      <MiddleNav cart={cart} toggleDrawer={toggleDrawer}/>
       <BottomNav/>
       <Breadcrumbs/>
     </div>

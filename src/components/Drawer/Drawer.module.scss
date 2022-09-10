@@ -1,0 +1,111 @@
+@import '../../variables.scss';
+
+
+.Drawer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 410px;
+    margin-top: 32px;
+}
+
+.close{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 6.67px;
+}
+
+.icon{
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+.title{
+    font-family: 'Montserrat-SemiBold';
+    color: $secondary-color;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.subtitle{
+    font-family: 'Montserrat-SemiBold';
+    color: black;
+    font-size: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+
+.total{
+    font-family: 'Montserrat-SemiBold';
+    color: #1D1D1B;
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 48px;
+    background: $primary-color 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #000000;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 12px;
+}
+
+.complete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 48px;
+    background: $secondary-color 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 12px;
+}
+
+.emptyCart{
+    font-family: 'Montserrat-SemiBold';
+    color: #1D1D1B;
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+}

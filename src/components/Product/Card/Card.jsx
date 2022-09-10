@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './Card.module.scss';
 
 import tagLogo from '../../../images/360.svg';
@@ -106,14 +106,14 @@ export const Card = ({ similarProduct }) => {
 
                     {[...Array(Math.floor(similarProduct.rating))].map((s, i) => (
 
-                        <img alt={'starFull'} className={styles.star} src={starFull} />
+                        <img key={i} alt={'starFull'} className={styles.star} src={starFull} />
 
                     ))}
 
 
                     {[...Array(Math.ceil(5 - similarProduct.rating))].map((s, i) => (
 
-                        <img alt={'starEmpty'} className={styles.star} src={starEmpty} />
+                        <img key={i} alt={'starEmpty'} className={styles.star} src={starEmpty} />
 
                     ))}
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './ImagesSection.module.scss';
 // import p1 from '../../../images/p1.png';
 // import p2 from '../../../images/p2.png';
@@ -16,19 +16,25 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
-export const ImagesSection = ({ }) => {
+export const ImagesSection = ({ images}) => {
 
-    let images = ['p1.png', 'p2.png', 'p3.png', 'p4.png']
+    // let images = ['p1.png', 'p2.png', 'p3.png', 'p4.png']
 
-    let [mainImg, setMainImg] = useState("2x" + images[0])
+    let [mainImg, setMainImg] = useState()
 
     // let [mainImgIndex, setMainImgIndex] = useState(0)
 
     const changeMainImg = (index) => {
 
         setMainImg("2x" + images[index])
-
     }
+
+    useEffect(() => {
+        if(images.length>0){
+        setMainImg("2x" + images[0])
+        }
+    }
+      ,[images]);
 
     return (
         <div className={styles.ImagesSection}>
@@ -43,7 +49,7 @@ export const ImagesSection = ({ }) => {
                 <LazyLoadImage
                     alt={'mainImg'}
                     height={568}
-                    src={require(`../../../images/${mainImg}`)} // use normal <img> attributes as props
+                    src={mainImg?require(`../../../images/${mainImg}`):''} // use normal <img> attributes as props
                     width={568} />
 
                 {/* <img alt='mainImg' className={styles.mainImg} src={require(`../../../images/${mainImg}`)} /> */}

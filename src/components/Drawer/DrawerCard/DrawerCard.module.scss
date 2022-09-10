@@ -1,0 +1,101 @@
+@import '../../../variables.scss';
+
+.Card{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    // height: 120px;
+    border: 0.75px solid #ECECEC;
+    border-radius: 7px;
+    margin-bottom: 16.32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainImg{
+    width: 104px;
+height: 104px;
+margin-left: 8px;
+
+}
+
+.cardProductInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 15px;
+
+}
+
+.title{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 14px;
+    color: #1D1D1B;
+    margin-bottom: 10px;
+}
+
+.quantity{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 11px;
+    color: #1D1D1B;
+    margin-bottom: 10px;
+}
+
+
+
+.pricingAndAction{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // margin-right: 16px;
+    // margin-left: 16px;
+    width: 267px;
+    margin-bottom: 8px;
+}
+
+.discountedPrice{
+    font-family: 'Montserrat-SemiBold';
+    font-size: 20px;
+    color: $secondary-color;
+    margin-right: 19.29px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.discountedPriceCurrency{
+    font-family: 'Montserrat-Regular';
+    font-size: 14px;
+}
+
+
+.action{
+    width: 80px;
+    height: 24px;
+    background-color: $primary-color;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,47 +15,47 @@ import plus from '../../../images/plus.svg';
 
 
 
-export const DescriptionSection = ({ }) => {
+export const DescriptionSection = ({ product, quantity,incrementQuantity,decrementQuantity, addProductToCart}) => {
 
-    let product = {
-        logo: 'adidasSmall.svg',
-        title: 'Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-        category: 'Men',
-        rating: 4.9,
-        numberOfRatings: '22',
-        price: '12,999',
-        discountedPrice: '9,999',
-        discountPercentage: '30%',
-        sizes: [{ type: 'Small', available: true },
-        { type: 'Medium', available: true },
-        { type: 'Large', available: false },
-        { type: 'X Large', available: true },
-        { type: 'XX Large', available: true }],
-        colors: ['black.png', 'red.png'],
-
-    }
-
-
-    let [quantity, setQuantity] = useState(1)
-
-    // let [mainImgIndex, setMainImgIndex] = useState(0)
-
-    // const changeMainImg = (index) => {
-
-    //     setMainImg("2x" + images[index])
+    // let product = {
+    //     logo: 'adidasSmall.svg',
+    //     title: 'Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
+    //     category: 'Men',
+    //     rating: 4.9,
+    //     numberOfRatings: '22',
+    //     price: '12,999',
+    //     discountedPrice: '9,999',
+    //     discountPercentage: '30%',
+    //     sizes: [{ type: 'Small', available: true },
+    //     { type: 'Medium', available: true },
+    //     { type: 'Large', available: false },
+    //     { type: 'X Large', available: true },
+    //     { type: 'XX Large', available: true }],
+    //     colors: ['black.png', 'red.png'],
 
     // }
 
-    const incrementQuantity = ()=>{
-        setQuantity(quantity+1)
-    }
 
-    const decrementQuantity = ()=>{
-        if(quantity!=1){
-            setQuantity(quantity-1)
-        }
+    // let [quantity, setQuantity] = useState(1)
+
+    // // let [mainImgIndex, setMainImgIndex] = useState(0)
+
+    // // const changeMainImg = (index) => {
+
+    // //     setMainImg("2x" + images[index])
+
+    // // }
+
+    // const incrementQuantity = ()=>{
+    //     setQuantity(quantity+1)
+    // }
+
+    // const decrementQuantity = ()=>{
+    //     if(quantity!=1){
+    //         setQuantity(quantity-1)
+    //     }
         
-    }
+    // }
 
 
 
@@ -63,37 +63,37 @@ export const DescriptionSection = ({ }) => {
     return (
         <div className={styles.DescriptionSection}>
 
-            <img alt={'logoSmall'} className={styles.logo} src={require(`../../../images/${product.logo}`)} />
+            <img alt={'logoSmall'} className={styles.logo} src={product?require(`../../../images/${product.logo}`):''} />
 
-            <div className={styles.title}>{product.title}</div>
+            <div className={styles.title}>{product?product.title:''}</div>
 
-            <div className={styles.category}>{product.category}</div>
+            <div className={styles.category}>{product?product.category:''}</div>
 
             <div className={styles.ratings}>
 
                 <div className={styles.stars}>
 
-                    {[...Array(Math.floor(product.rating))].map((s, i) => (
+                    {[...Array(Math.floor(product?product.rating:0))].map((s, i) => (
 
-                        <img alt={'starFull'} className={styles.star} src={starFull} />
+                        <img key={i} alt={'starFull'} className={styles.star} src={starFull} />
 
                     ))}
 
 
-                    {[...Array(Math.ceil(5 - product.rating))].map((s, i) => (
+                    {[...Array(Math.ceil(5 - product?product.rating:0))].map((s, i) => (
 
-                        <img alt={'starEmpty'} className={styles.star} src={starEmpty} />
+                        <img key={i} alt={'starEmpty'} className={styles.star} src={starEmpty} />
 
                     ))}
 
                 </div>
 
                 <div className={styles.rating}>
-                    {product.rating} of 5
+                    {product?product.rating:0} of 5
                 </div>
 
                 <div className={styles.numberOfRatings}>
-                    {product.numberOfRatings} Rates
+                    {product?product.numberOfRatings:0} Rates
                 </div>
 
 
@@ -104,7 +104,7 @@ export const DescriptionSection = ({ }) => {
 
                 <div className={styles.discountedPrice}>
 
-                    {product.discountedPrice}&nbsp;
+                    {product?product.discountedPrice:0}&nbsp;
 
                     <div className={styles.discountedPriceCurrency}>{" LE"}</div>
 
@@ -114,14 +114,14 @@ export const DescriptionSection = ({ }) => {
 
                 <div className={styles.price}>
 
-                    {product.price}&nbsp;
+                    {product?product.price:0}&nbsp;
 
                     <div className={styles.priceCurrency}>{" LE"}</div>
 
 
 
                 </div>
-                <div className={styles.discountPercentage}>{product.discountPercentage} Off</div>
+                <div className={styles.discountPercentage}>{product?product.discountPercentage:0} Off</div>
             </div>
 
             <div className={styles.hr}></div>
@@ -131,11 +131,11 @@ export const DescriptionSection = ({ }) => {
             <div className={styles.subtitle}>Size</div>
 
             <div className={styles.sizes}>
-                {product.sizes.map((s, i) => (
+                {product?product.sizes.map((s, i) => (
 
                     <div key={i} className={`${styles.sizeDiv} ${!s.available ? styles.sizeDivDisabled : ''}`}>{s.type}</div>
 
-                ))}
+                )):''}
             </div>
 
 
@@ -147,11 +147,11 @@ export const DescriptionSection = ({ }) => {
 
             <div className={styles.colors}>
 
-                {product.colors.map((c, i) => (
+                {product?product.colors.map((c, i) => (
 
                     <img key={i} alt={c} className={styles.color} src={require(`../../../images/${c}`)} />
 
-                ))}
+                )):''}
             </div>
 
 
@@ -167,8 +167,8 @@ export const DescriptionSection = ({ }) => {
                     <img alt={'minus'} className={styles.minus} src={minus} />
                 </div>
                 <div className={styles.quantityText}>{quantity}</div>
-                <div className={styles.circle}>
-                    <img alt={'plus'} className={styles.plus} src={plus} onClick={incrementQuantity} />
+                <div className={styles.circle} onClick={incrementQuantity}>
+                    <img alt={'plus'} className={styles.plus} src={plus}  />
                 </div>
 
             </div>
@@ -176,7 +176,7 @@ export const DescriptionSection = ({ }) => {
 
             <div className={styles.actions}>
 
-            <div className={styles.addToCart}>
+            <div className={styles.addToCart} onClick={addProductToCart}>
             Add To Cart
                 </div>
 
