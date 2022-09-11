@@ -126,15 +126,15 @@ export const Card = ({ similarProduct }) => {
             </div>
 
 
-            <div className={`${styles.shipment} ${similarProduct.shipment.type==='pickup'?styles.shipmentPickup:''}`}>
+            <div className={`${styles.shipment} ${similarProduct.shipment.type === 'pickup' ? styles.shipmentPickup : ''}`}>
 
-            <div className={styles.label}>{similarProduct.shipment.type==='pickup'?'Pickup':''} From:&nbsp;<div className={styles.text}>{similarProduct.shipment.from}</div></div>
+                <div className={styles.label}>{similarProduct.shipment.type === 'pickup' ? 'Pickup' : ''} From:&nbsp;<div className={styles.text}>{similarProduct.shipment.from}</div></div>
 
-            {similarProduct.shipment.type!=='pickup'?<><div className={styles.label}>To: &nbsp;<div className={styles.text}>{similarProduct.shipment.to}</div></div>
-            <div className={styles.label}>in: &nbsp;<div className={styles.text}>{similarProduct.shipment.in}</div></div>
-              </>:''}
-                 
-                </div>
+                {similarProduct.shipment.type !== 'pickup' ? <><div className={styles.label}>To: &nbsp;<div className={styles.text}>{similarProduct.shipment.to}</div></div>
+                    <div className={styles.label}>in: &nbsp;<div className={styles.text}>{similarProduct.shipment.in}</div></div>
+                </> : ''}
+
+            </div>
 
 
         </div>

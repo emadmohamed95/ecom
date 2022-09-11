@@ -13,7 +13,8 @@ import plus from '../../../images/plus.svg';
 
 
 export const DescriptionSection = ({ product, quantity,incrementQuantity,decrementQuantity, addProductToCart}) => {
-
+    console.log(5-product?product.ratings:0)
+    console.log(Math.ceil(5 - product?.ratings?product.ratings:0))
 
 
     return (
@@ -36,7 +37,7 @@ export const DescriptionSection = ({ product, quantity,incrementQuantity,decreme
                     ))}
 
 
-                    {[...Array(Math.ceil(5 - product?product.rating:0))].map((s, i) => (
+                    {[...Array(Math.ceil(5 - (product?product.rating:0)))].map((s, i) => (
 
                         <img key={i} alt={'starEmpty'} className={styles.star} src={starEmpty} />
 
