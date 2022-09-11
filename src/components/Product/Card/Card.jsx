@@ -14,40 +14,6 @@ import starEmpty from '../../../images/starEmpty.svg';
 
 export const Card = ({ similarProduct }) => {
 
-    // let similarProducts = [{
-    //     image:'',
-    //     title:'',
-    //     logo: 'adidasSmall.svg',
-    //     rating: 4.9,
-    //     price: '12,999',
-    //     discountedPrice: '9,999',
-    //     discountPercentage: '30%',
-    //     shipmentType:'local', //local,abroad
-    //     shipment:{
-    //         type: 'pickup', //pickup, delivery
-    //         from:'Genena Mall',
-    //         to:'',
-    //         in:''
-    //     }
-    // }]
-
-    // let product = {
-    //         image:'sp1.png',
-    //         title:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    //         logo: 'adidasSmall.svg',
-    //         rating: 4.2,
-    //         price: '19,999',
-    //         discountedPrice: '9,999',
-    //         discountPercentage: '50%',
-    //         shipmentType:'local', //local,abroad
-    //         shipment:{
-    //             type: 'pickup', //pickup, delivery
-    //             from:'Genena Mall',
-    //             to:'',
-    //             in:''
-    //         }
-    //     }
-
     return (
         <div className={styles.Card}>
 
@@ -64,7 +30,6 @@ export const Card = ({ similarProduct }) => {
                     src={require(`../../../images/${similarProduct.image}`)} // use normal <img> attributes as props
                     width={254} />
 
-                {/* <img alt='mainImg' className={styles.mainImg} src={require(`../../../images/${mainImg}`)} /> */}
             </div>
 
             <div className={styles.title}>{similarProduct.title}</div>

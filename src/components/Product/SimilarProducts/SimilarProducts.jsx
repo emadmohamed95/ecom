@@ -10,8 +10,6 @@ import { Card } from '../Card/Card';
 
 export const SimilarProducts = ({ similarProducts }) => {
 
-console.log(similarProducts)
-
     return (
         <div className={styles.SimilarProducts}>
             

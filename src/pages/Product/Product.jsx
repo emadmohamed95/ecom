@@ -37,8 +37,6 @@ export const Product = ({ addToCart }) => {
 
     let totalPrice = (product?parseFloat(product.discountedPrice.replace(/,/g, '')):0) * quantity
 
-    console.log(totalPrice)
-
     let cartProduct = {
       title:product?product.title:'',
       quantity:quantity,

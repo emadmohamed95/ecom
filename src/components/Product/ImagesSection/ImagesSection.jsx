@@ -18,11 +18,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const ImagesSection = ({ images}) => {
 
-    // let images = ['p1.png', 'p2.png', 'p3.png', 'p4.png']
-
     let [mainImg, setMainImg] = useState()
-
-    // let [mainImgIndex, setMainImgIndex] = useState(0)
 
     const changeMainImg = (index) => {
 
@@ -52,7 +48,6 @@ export const ImagesSection = ({ images}) => {
                     src={mainImg?require(`../../../images/${mainImg}`):''} // use normal <img> attributes as props
                     width={568} />
 
-                {/* <img alt='mainImg' className={styles.mainImg} src={require(`../../../images/${mainImg}`)} /> */}
             </div>
 
             <div className={styles.images}>

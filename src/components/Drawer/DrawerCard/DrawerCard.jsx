@@ -10,14 +10,6 @@ import styles from './DrawerCard.module.scss';
 
 export const DrawerCard = ({ cartProduct, index,removeFromCart}) => {
 
-    // let cartProduct = {
-    //     "title": "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-    //     "quantity": 1,
-    //     "mainImg": "p1.png",
-    //     "price": "9,999"
-    // }
-
-
     return (
         <div className={styles.Card}>
 

@@ -1,8 +1,5 @@
 import React from 'react'
-// import { ReactComponent as BurgerMenu } from '../../../../public/images/burger.svg';
-// import { ReactComponent as BurgerMenu } from '../../../../public/images/burger.svg';
 import BurgerMenu from '../../../images/burger.svg';
-// import './TopNav.scss';
 import styles from './TopNav.module.scss';
 import logo from '../../../images/logo.svg';
 import nextSmall from '../../../images/nextsmall.svg';
